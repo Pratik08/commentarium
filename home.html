@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Commentarium</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+body{
+	background-image:url('back.jpg');
+	font-family:Font;
+	}
+	@font-face {
+    font-family:Font;
+    src: url(Neuropol.ttf);
+    @font-face {
+    font-family:Quadranta-bold;
+    src: url(Quadranta-bold.otf);  
+    font-style:bold; 
+}
+}
+</style>
+<body>
+	<!---nav-->	
+		<nav class="navbar navbar-inverse navbar-static " >
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navb">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="home.html" style="font-family:Font">Commentarium</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="navb">
+			<ul class="nav navbar-nav navbar-right">
+		        <li><a href="mailto:help.commentarium@gmail.com" target="_blank">Contact us</a></li>
+		        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+	<!--/nav-->	
+<div class="container">
+	<div style="position:absolute;top:100;left:50;width:550px;height:300px;color:#fff;font-family:Font">
+	<h1>Welcome to Commentarium </h1>
+	<br />
+	<br />
+	<p style="font-size:20px">Commentarium. Commentarium is a platform for you to express your views in front of the entire Internet. You can post your opinions freely because of our zero censorship policy. They are your views, and they shouldn't be subject to any persons opinions. It's your Commentarium. And yes, it's free to use and always will be. Cheers.</p>
+	</div>
+	<div class="row" > 
+		<div class="col-md-offset-8 col-md-3 col-lg-offset-8 col-lg-3 col-xs-offset-3 log">
+			<form role="form" id="login" method="post" action="auth.php">
+			    <div class="form-group" >
+			      
+			      <input type="text" class="form-control" name="email" placeholder="Enter Email/Username" required>
+			    </div>
+				<div class="row">
+			    <div class="form-group col-md-8 col-lg-8">
+			    
+			      <input type="password" class="form-control" name="pwd" placeholder="Enter Password" required>
+			    </div>
+			  <div class="col-md-2 col-lg-2">
+			    <button type="submit" href="main.html" class="btn btn-warning">Log in</button>
+				</div>	
+				</div>	
+			  </form>
+
+		</div>
+	</div>
+		
+		<div class="row">
+		<div class="col-md-offset-8 col-md-3 col-lg-offset-8 col-lg-3 col-xs-offset-3" style="margin-top:10px;background-color:#333;padding:20px;border-radius:7px">
+		<h4 style="color:#fff">New to Commentarium? Sign up!</h4>
+		<form role="form" id="signup" method="post" action="new.php">
+				<div class="form-group" >
+			      
+			      <input type="text" class="form-control" id="fname"  name="fname"placeholder="Full Name"  required>
+			    </div>
+			    <div class="form-group" >
+			      
+			      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required> 
+			    </div> 
+			    <div class="form-group" >
+			      
+			      <input type="text" class="form-control" id="username"  name="username"placeholder="Username" required>
+			    </div>
+			    <div class="form-group">
+			    
+			      <input type="password" class="form-control" id="pwd"name="pwd" placeholder="Password" required>
+			    </div>
+			    <div class="row">
+			    	<div class="col-md-5 col-lg-5 col-xs-5 col-sm-5">
+						  <div class="form-group">  
+							<label style="color:#ccc;font-size:17px;margin-left:2px">Enter DOB</label>						  
+						  </div>
+					</div>	
+			    	<div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+						  <div class="form-group">  
+						    <input type="date" class="form-control"  placeholder="Enter date" name="dob" required>
+						  </div>
+					</div>	  
+				</div>	
+				<div class="row">
+				<div class="col-md-offset-2 col-lg-offset-2">
+			    <button type="submit" class="btn btn-success">Sign Up for Commentarium</button>
+			  </div>
+			  </div>
+			  </form>
+			  
+
+		</div>		
+	</div>
+</div>
+	 	 <script src="js/validator.min.js"></script>
+	 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		  <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
